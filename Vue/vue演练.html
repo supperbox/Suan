@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="vue.css">
+<!--    <style>-->
+<!--        #app{-->
+<!--            height: 200px;-->
+<!--            width: 200px;-->
+<!--            background-color: royalblue;-->
+<!--        }-->
+<!--    </style>-->
+</head>
+<body>
+
+<div id="app">
+    <div id="c" v-on:click="clicks">
+        <coco  :name = 'name' ></coco>
+    </div>
+    {{name}}
+    <input type="text" >
+</div>
+<div id="b">
+    {{age}}
+</div>
+<!-- 在该处引入vue文件 -->
+<script type="module" src="vue.js"></script>
+<script src="../node_modules/_vue@3.0.11@vue/dist/vue.global.js"></script>
+</body>
+</html>
